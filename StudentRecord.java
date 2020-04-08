@@ -20,3 +20,21 @@ class Student
 		(this.dob).display();
 	}
 }
+class Date
+{
+	//This class stores the date in a givem format.
+	int dd, mm, yyyy;
+	Date(int dd, int mm, int yyyy)
+	{
+		//Assigning values to the fields.
+		this.dd = dd;
+		this.mm = mm;
+		this.yyyy = yyyy;
+	}
+	void display()
+	{
+		//Displaying the date in a given format.
+		System.out.println("Date of Birth: " + this.dd + "-" + this.mm + "-" + this.yyyy);
+	}
+}
+
