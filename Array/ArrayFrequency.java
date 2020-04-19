@@ -21,4 +21,21 @@ public class ArrayFrequency
         }
         return array;
     }
+	public static void main(String args[])
+    	{
+        	//Creating object id Scanner class to take input.
+        	Scanner input = new Scanner(System.in);
+        	//size stores the size of the array.
+        	int size;
+        	System.out.print("Enter the size of array: ");
+      		size = input.nextInt();
+        	//Declaring the array.
+        	int arr[] = new int[size];
+        	System.out.print("Enter the elements of array: ");
+        	//taking array as input.
+        	for(int i=0;i<size;i++)
+            		arr[i] = input.nextInt();
+        	//sorting the array using sort method.
+        	arr = sort(arr);
+    	}
 }
