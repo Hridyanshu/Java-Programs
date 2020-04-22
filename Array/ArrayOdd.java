@@ -1,4 +1,4 @@
-/* Program to print the elements present at even indices of the array. */
+/* Program to print the elements present at odd indices of the array. */
 
 import java.util.Scanner;
 
