@@ -19,7 +19,7 @@ public class ArrayOdd
             array[i] = input.nextInt();
         }
         input.close();
-        System.out.print("Elements at even indices are: ");
+        System.out.print("Elements at odd indices are: ");
         for(int i=0;i<array.length;i++)
         {
             if(i%2!=0)
