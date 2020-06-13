@@ -29,4 +29,20 @@ class LinkedList
             head = head.next;
         }
     }
+    public void display()
+    {
+        if(head == null) //list is empty
+            System.out.println("List is empty");
+        else //list is not empty
+        {
+            //iterating through each node and displaying the data
+            Node temp = start;
+            while(temp != null)
+            {
+                System.out.print(temp.data + "\t");
+                temp = temp.next;
+            }
+            System.out.println();
+        }
+    }
 }
