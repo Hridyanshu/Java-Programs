@@ -46,3 +46,31 @@ class LinkedList
         }
     }
 }
+
+public class LinkedListImplementation
+{
+    public static void main(String args[])
+    {
+        //object of Scanner class
+        LinkedList mylist = new LinkedList();
+        Scanner input = new Scanner(System.in);
+        int choice = 0;
+        do
+        {
+            System.out.print("\nWhich operation do you want to perform?\n1.Insertion (at the end)\n2.Display the list\n3.Exit\nEnter your choice: ");
+            choice = input.nextInt();
+            switch(choice)
+            {
+                case 1: System.out.print("Enter the value to be inserted: ");
+                        int data = input.nextInt();
+                        mylist.insert(data);
+                        break;
+                case 2: mylist.display();
+                        break;
+                case 3: System.out.println("Terminating");
+                        break;
+                default: System.out.println("!!Invalid choice!!");
+            }
+        }while(choice!=3);
+    }
+}
